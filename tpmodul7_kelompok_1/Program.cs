@@ -1,7 +1,11 @@
-﻿internal class Program
+﻿in
+﻿using tpmodul7_kelompok_1;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        KuliahMahasiswa1302220087 t1 = new KuliahMahasiswa1302220087();
+        t1.readJSON();
     }
 }
