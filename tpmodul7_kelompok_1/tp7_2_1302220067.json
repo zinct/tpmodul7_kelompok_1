@@ -1,0 +1,28 @@
+{
+	"courses": [
+		{
+			"code": "CRI2C4",
+			"name": "Konstruksi Perangkat Lunak"
+		},
+		{
+			"code": "CRI2E4-SE-46-01",
+			"name": "Basis Data"
+		},
+		{
+			"code": "CRJ2G3-SE-46-01",
+			"name": "Dasar Jaringan Komputer"
+		},
+		{
+			"code": "CII3B4-SE-46-01",
+			"name": "Pemograman Berorientasi Objek"
+		},
+		{
+			"code": "CRI2C4-S1RPL-22324",
+			"name": "Kontruksi Perangkat Lunak"
+		},
+		{
+			"code": "CRI2F2-SE-46-01",
+			"name": "Proyek Tingkat II"
+		}
+	]
+}
