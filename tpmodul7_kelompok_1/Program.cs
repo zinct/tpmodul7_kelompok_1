@@ -4,7 +4,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        DataMahasiswa1302220084 t1 = new DataMahasiswa1302220084();
+        KuliahMahasiswa1302220084 t1 = new KuliahMahasiswa1302220084();
         t1.readJSON();
     }
 }

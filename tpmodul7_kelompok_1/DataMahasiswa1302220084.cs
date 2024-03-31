@@ -30,7 +30,6 @@ namespace tpmodul7_kelompok_1
 
             Console.WriteLine("Nama {0} {1} dengan nim {2}", mahasiswa.nama.depan , mahasiswa.nama.belakang, mahasiswa.nim);
 
-
         }
     }
 }
