@@ -1,16 +1,39 @@
 ﻿
 using System.Text.Json;
-using System.Linq;
-using System.Text.Json.Serialization;
 using System.Text;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using System.Diagnostics;
+using static Dataamahasiswa1302220002;
+
 
 internal class Program
 {
+    class KuliahMahasiswa1302220002
+    {
 
-    
+        public class MataKuliah
+        {
+            public Cours[] courses { get; set; }
+        }
+
+        public class Cours
+        {
+            public string code { get; set; }
+            public string name { get; set; }
+        }
+
+        public void readjsonMK()
+        {
+            string json = File.ReadAllText("../../../tp7_2_1302220002.json");
+            var matakuliah = JsonSerializer.Deserialize<MataKuliah>(json);
+            Console.WriteLine("Daftar Matakuliah yang diambil: ");
+            for (int i = 0; i < matakuliah.courses.Length; i++)
+            {
+                Console.WriteLine($"MK {i + 1} {matakuliah.courses[i].code} - {matakuliah.courses[i].name}");
+            }
+        }
+
+    }
+
     class Dataamahasiswa1302220002
     {
         public class Mahasiswa1302220002
@@ -19,7 +42,7 @@ internal class Program
             public int nim { get; set; }
             public string fakultas { get; set; }
 
-            
+
         }
 
         public class Nama
@@ -38,11 +61,14 @@ internal class Program
     }
 
 
-    
+
 
     private static void Main(string[] args)
     {
+        Console.WriteLine("Hello, World!");
         var A = new Dataamahasiswa1302220002();
-        A.readjson();
+        A.readjson();Z
+        var B = new KuliahMahasiswa1302220002();
+        B.readjsonMK();
     }
 }
