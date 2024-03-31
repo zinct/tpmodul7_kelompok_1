@@ -24,7 +24,7 @@ namespace tpmodul7_kelompok_1
 
         public void readJSON()
         {
-            var dataJson = File.ReadAllText("../../../tp7_1_1302220084.json");
+            var dataJson = File.ReadAllText("../../../tp7_1_1302223029.json");
 
             var mahasiswa = JsonSerializer.Deserialize<Mahasiswa1302223029>(dataJson, new JsonSerializerOptions { IncludeFields = true });
 
